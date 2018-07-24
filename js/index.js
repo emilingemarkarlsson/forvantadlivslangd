@@ -42,21 +42,21 @@ function renderNoOutput() {
 
 function renderOutput(lifeDays, deathday, daysLeft, lifePercentage) {
   var textHtml =
-    "Having lived for<h2>" +
+    "Du har hitills levt<h2>" +
     lifeDays.toFixed(5) +
-    " days</h2>" +
-    "you can expect to die around<h2>" +
+    " dagar</h2>" +
+    "Du kan förvänta dig att du ungefär<h2>" +
     deathday.toLocaleDateString(undefined, {
       year: "numeric",
       month: "long",
       day: "numeric"
     }) +
-    "</h2>giving you<h2>" +
+    "</h2>Detta ger dig<h2>" +
     daysLeft.toFixed(5) +
-    " days left</h2>" +
-    "roughly<h2>" +
+    " dagar kvar</h2>" +
+    "Ungefär<h2>" +
     lifePercentage.toFixed(8) +
-    "%</h2> complete.<h1>🖖</h1>";
+    "%</h2> Klar.<h1>🖖</h1>";
   $("#predictions").html(textHtml);
 }
 
