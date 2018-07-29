@@ -45,7 +45,7 @@ function renderOutput(lifeDays, deathday, daysLeft, lifePercentage) {
     "Du har hitills levt<h2>" +
     lifeDays.toFixed(5) +
     " dagar</h2>" +
-    "Du kan förvänta dig att du ungefär<h2>" +
+    "Du kan förvänta dig att dö ungefär<h2>" +
     deathday.toLocaleDateString(undefined, {
       year: "numeric",
       month: "long",
